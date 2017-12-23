@@ -2,6 +2,11 @@ jQuery(document).ready(function($) {
 
 	var $body = $('body');
 
+
+	setTimeout(function() {
+		$body.addClass('ready');
+	}, 1000);
+
 	$('#aboutMe, #contactMe').css('display', 'none');
 	$('a[data-rel^=lightcase]').lightcase({
 		showTitle: false
@@ -84,7 +89,7 @@ jQuery(document).ready(function($) {
 
 	    var counter = 0;
 	    var shown = true;
-	    var time = 333;    
+	    var time = 400;    
 
 	    function changeContent() {
 	        if(counter === allQualities.length) {
@@ -133,7 +138,7 @@ jQuery(document).ready(function($) {
 	        changeContent();
 	    }
 
-	    changeContent()
+	    setTimeout(changeContent, 1050);
 
      }//if
 
