@@ -59,7 +59,7 @@ jQuery(document).ready(function($) {
      		'the best', 
      		'a lover', 
      		'me', 
-     		'all'
+     		'ALL'
      	];
 
      	var badQualities = [
@@ -128,7 +128,7 @@ jQuery(document).ready(function($) {
 	            $iAm.addClass('moveUp');
 	            $mainHeading.addClass('almost-there');
 	        }
-	        if(allQualities[counter] === 'all') {
+	        if(allQualities[counter] === 'ALL') {
 	            $whoIam.addClass('biggest');
 	            $iAm.addClass('moveUpMore');
 	            $mainHeading.addClass('finally-here');
@@ -139,6 +139,7 @@ jQuery(document).ready(function($) {
 	    }
 
 	    setTimeout(changeContent, 1050);
+
 
      }//if
 
