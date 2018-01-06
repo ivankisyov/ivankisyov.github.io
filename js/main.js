@@ -143,4 +143,47 @@ jQuery(document).ready(function($) {
 
      }//if
 
+     if($body.hasClass('you')) {
+
+     	setTimeout(function() {
+     		$('.human-list li').removeClass();
+     	}, 13000);
+
+     	setTimeout(function() {
+
+
+
+	     	$('.rest').each(function(i, el) {
+	     		var $this = $(el);
+	     		var counter = 0;
+	     		setTimeout(function() {
+	     			$this.addClass('hidden');
+	     			counter++;
+	     		}, 1000 * i);
+
+	     		if(i === 4) {
+	     			setTimeout(function() {
+	     				$('.svg-icon-heart').addClass('is-shown');
+	     			}, (i + 1 + counter) * 1000);
+	     		}
+
+	     	});
+
+     	}, 17000);
+
+     	
+
+
+     }// if
+
+     if($body.hasClass('showcase')) {
+
+     	$('.showcase-list li').each(function(i, el) {
+     		setTimeout(function() {
+     			$(el).addClass('rotate-me');
+     		}, 1000 * (i + 1));
+     	});
+
+     }// if
+
 });
