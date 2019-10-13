@@ -184,8 +184,6 @@ jQuery(document).ready(function($) {
      		}, 1000 * (i + 1));
      	});
 
-     }// if
-	
-	console.log('simple test again and again and again...')
+     }
 
 });
