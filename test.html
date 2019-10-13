@@ -17,10 +17,16 @@
  <h1>simple test</h1>
     </div>
  <button id="target">change title</button>
-    <script>
+    <button id="cancel">cancel</button>
+   <script>
       const btn = document.getElementById("target");
+      const cancel = document.getElementById("cancel");
       btn.addEventListener("click", function() {
         localStorage.setItem("h1", "set in LS");
+        document.querySelector("h1").innerHTML = localStorage.getItem("h1");
+      });
+      cancel.addEventListener("click", function() {
+        localStorage.removeItem("h1");
         document.querySelector("h1").innerHTML = localStorage.getItem("h1");
       });
       if (localStorage.getItem("h1")) {
