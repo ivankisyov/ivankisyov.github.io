@@ -185,5 +185,7 @@ jQuery(document).ready(function($) {
      	});
 
      }// if
+	
+	console.log('simple test...')
 
 });
