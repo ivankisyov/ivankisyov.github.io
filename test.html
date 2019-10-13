@@ -19,7 +19,7 @@
  <button id="target">change title</button>
     <script>
       const btn = document.getElementById("target");
-      btn.addEventListener("click", () => {
+      btn.addEventListener("click", function() {
         localStorage.setItem("h1", "set in LS");
         document.querySelector("h1").innerHTML = localStorage.getItem("h1");
       });
