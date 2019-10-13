@@ -16,6 +16,19 @@
     <div class="page-wrap" id="pageWrap">
  <h1>simple test</h1>
     </div>
- 
+ <button id="target">change title</button>
+    <script>
+      const btn = document.getElementById("target");
+      btn.addEventListener("click", () => {
+        localStorage.setItem("h1", "set in LS");
+        document.querySelector("h1").innerHTML = localStorage.getItem("h1");
+      });
+      if (localStorage.getItem("h1")) {
+        console.log('localStorage.getItem("h1") exists');
+        document.querySelector("h1").innerHTML = localStorage.getItem("h1");
+      } else {
+        console.log('localStorage.getItem("h1") DO NOT exist');
+      }
+    </script>
 </body>
 </html>
